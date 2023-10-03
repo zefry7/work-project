@@ -3,7 +3,7 @@
 }
 
 .wrapper__separator-block {
-    padding: 0 15.27vw;
+    padding: 0 clamp(210px, 15.27vw, 210px);
 }
 
 .separator-block__img {
@@ -12,6 +12,7 @@
     align-items: center;
 
     img {
+        max-width: 100%;
         width: 69.4vw;
         height: auto;
     }
