@@ -1,6 +1,9 @@
 @import url(./null-style.css);
 @import url(./header/header.css);
 @import url(./main/main-block/main-block.css);
+@import url(./main/name-block/name-block.css);
+@import url(./main/info-block/info-block.css);
+@import url(./main/separator-block/separator-block.css);
 
 @font-face {
     font-family: "InterMedium";
@@ -37,10 +40,14 @@
     margin: 0 auto;
 }
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: clamp(375px, 100vw, 1440px);
     height: 80px;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 .main {
 
