@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document  
+    body 
+        div.wpapper
+            header.header.wrapper__header
+                div.header__block-logo
+                    img(src="./img/logo-cat.svg", alt="")
+                    img(src="./img/logo-text.svg", alt="")
+                nav.header__links 
+                    a.header__link(href="#") О нас
+                    a.header__link(href="#") Кейсы
+                    a.header__link(href="#") Обратная связь
+                button.header__button Войти
+                div.burger-menu
+                    div.burger-menu__button
+                        span 
+                        span
+                        span
+                    div.burger-menu__content
+                        nav.header__links 
+                            a.header__link(href="#") О нас
+                            a.header__link(href="#") Кейсы
+                            a.header__link(href="#") Обратная связь
+                        button.header__button Войти
+            main.main
+                section.main-block.wrapper__main 
+                    div.main-block__left
+                        div.main-block__text
+                            h2.main-block__title 
+                                | Таск-трекер 
+                                br 
+                                | для креативных 
+                                br
+                                | команд
+                            p.main-block__subtitle Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!
+                        div.main-block__bottom-row
+                            ul.main-block__tags 
+                                li.main-block__tag Бесплатно
+                                li.main-block__tag Без привязки карты
+                                li.main-block__tag 2000+ пользователей
+                            input.main-block__input-seacrh(placeholder="Электронная почта")
+                            button.main-block__button-search Начать 
+                                span
+                    div.main-block__right
+                        p Совместная работа
+
+
+        script(src="./js/header/header.js") 
+
+                    

@@ -1,0 +1,39 @@
+@import url(./null-style.css);
+@import url(./header/header.css);
+@import url(./main/main-block/main-block.css);
+@font-face {
+  font-family: "InterMedium";
+  font-weight: 500;
+  src: url(/fonts/hinted-Inter-Medium.woff) format("woff"), url(/fonts/hinted-Inter-Medium.woff2) format("woff2"), url(/fonts/hinted-Inter-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "InterRegular";
+  font-weight: 400;
+  src: url(/fonts/hinted-Inter-Regular.ttf) format("woff"), url(/fonts/hinted-Inter-Regular.woff2) format("woff2"), url(/fonts/hinted-Inter-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "OswaldMedium";
+  font-weight: 500;
+  src: url(/fonts/hinted-Oswald-Medium.woff) format("woff"), url(/fonts/hinted-Oswald-Medium.woff2) format("woff2"), url(/fonts/hinted-Oswald-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "OswaldRegular";
+  font-weight: 400;
+  src: url(/fonts/hinted-Oswald-Regular.woff) format("woff"), url(/fonts/hinted-Oswald-Regular.woff2) format("woff2"), url(/fonts/hinted-Oswald-Regular.ttf) format("ttf");
+}
+.wpapper {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  width: clamp(375px, 100vw, 1440px);
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

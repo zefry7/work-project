@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="+">
+<g id="img">
+<mask id="mask0_1_194" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="98" height="98">
+<circle id="Ellipse 45" cx="50" cy="50" r="49" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1_194)">
+<circle id="Ellipse 46" cx="50" cy="50" r="49" fill="white"/>
+</g>
+</g>
+<circle id="Ellipse 46_2" cx="50" cy="50" r="45" stroke="#222FDC" stroke-width="10"/>
+<path id="+_2" d="M47.4545 65V35H52.5455V65H47.4545ZM35 52.5455V47.4545H65V52.5455H35Z" fill="#1839CF"/>
+</g>
+</svg>
