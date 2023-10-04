@@ -14,9 +14,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 64px;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -37,7 +34,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .lending-block__tag {
@@ -78,6 +75,9 @@
 
 .lending-block__screen {
   margin: 8px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,0 +1,29 @@
+section.main-block.wrapper__main 
+    .main-block__left
+        .main-block__text
+            h2.main-block__title 
+                | Таск-трекер 
+                br 
+                | для креативных 
+                br
+                | команд
+            p.main-block__subtitle Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!
+        .main-block__bottom-row
+            ul.main-block__tags 
+                each val in nameTags 
+                    li.main-block__tag= val
+        .main-block__input-block
+            input.main-block__input-seacrh(placeholder="Электронная почта")
+            button.main-block__button-search Начать 
+                span
+    .main-block__right
+        p.main-block__label Совместная работа
+        .main-block__center-content
+            p.main-block__label Это ваш милейший коллега 
+            ul.main-block__avatars-row 
+                each val in avatarsImg
+                    li.main-block__avatar 
+                        img(src=val, alt="")
+            p.main-block__label А это вы
+        .main-block__bottom-img
+            img(src=nameImg, alt="")

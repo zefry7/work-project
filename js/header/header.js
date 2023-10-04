@@ -1,6 +1,4 @@
-function burgerMenuShow(e) {
 
-}    
 const menu = document.querySelector(".burger-menu__button");
 menu.addEventListener("click", () =>{
     const headerBlock = document.querySelector(".header");

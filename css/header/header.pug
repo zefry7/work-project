@@ -1,0 +1,18 @@
+header.header.wrapper__header
+    .header__block-logo
+        img(src=headerImg[0], alt="")
+        img(src=headerImg[1], alt="")
+    nav.header__links 
+        each item in headerLinks
+            a.header__link(href="#")= item
+    button.header__button Войти
+    .burger-menu
+        div.burger-menu__button
+            span 
+            span
+            span
+    .burger-menu__content
+        nav.header__links 
+            each item in links
+                a.header__link(href="#")= item
+        button.header__button Войти

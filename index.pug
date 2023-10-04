@@ -6,172 +6,28 @@ html(lang="en")
         link(rel="stylesheet", href="./css/style.css")
         title Mogu  
     body 
+        -var lendingTags = ["Product marketing", "Growth marketing", "Creative", "Marketing", "PR"]  
+        -var headerLinks = ["О нас", "Кейсы", "Обратная связь"]
+        -var mainTags = ["Бесплатно", "Без привязки карты", "2000+ пользователей"]
+
+        -var lendingImg = "/img/Camera.png"
+        -var avatarsImg = ["/img/avatar-you.svg", "/img/icon-woman.png", "/img/icon-dog.png", "/img/icon-man.png", "/img/plus.svg"]
+        -var mainImg = "/img/pen.png";
+        -var nameImg = ["/img/persona-1.png", "/img/persona-2.png", "/img/persona-3.png", "/img/persona-4.png",
+                        "/img/persona-5.png", "/img/letter-m.svg", "/img/letter-o.svg", "/img/letter-g.svg", "/img/letter-u.svg"]
+        -var infoImg = ["/img/iMac.png", "/img/Saly-23.png", "/img/Folder.png", "/img/Saly-31.png"]
+        -var headerImg = ["./img/logo-cat.svg", "./img/logo-text.svg"]
+        -var separatorImg = "/img/doodle.png"
+        -var feedbackImg = "/img/cat.png"
         .wpapper
-            header.header.wrapper__header
-                .header__block-logo
-                    img(src="./img/logo-cat.svg", alt="")
-                    img(src="./img/logo-text.svg", alt="")
-                nav.header__links 
-                    a.header__link(href="#") О нас
-                    a.header__link(href="#") Кейсы
-                    a.header__link(href="#") Обратная связь
-                button.header__button Войти
-                .burger-menu
-                    div.burger-menu__button
-                        span 
-                        span
-                        span
-                    .burger-menu__content
-                        nav.header__links 
-                            a.header__link(href="#") О нас
-                            a.header__link(href="#") Кейсы
-                            a.header__link(href="#") Обратная связь
-                        button.header__button Войти
+            include css/header/header.pug
             main.main
-                section.main-block.wrapper__main 
-                    .main-block__left
-                        .main-block__text
-                            h2.main-block__title 
-                                | Таск-трекер 
-                                br 
-                                | для креативных 
-                                br
-                                | команд
-                            p.main-block__subtitle Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!
-                        .main-block__bottom-row
-                            ul.main-block__tags 
-                                li.main-block__tag Бесплатно
-                                li.main-block__tag Без привязки карты
-                                li.main-block__tag 2000+ пользователей
-                        .main-block__input-block
-                            input.main-block__input-seacrh(placeholder="Электронная почта")
-                            button.main-block__button-search Начать 
-                                span
-                    .main-block__right
-                        p.main-block__label Совместная работа
-                        .main-block__center-content
-                            p.main-block__label Это ваш милейший коллега 
-                            ul.main-block__avatars-row 
-                                li.main-block__avatar 
-                                    img(src="/img/avatar-you.svg", alt="")
-                                li.main-block__avatar 
-                                    img(src="/img/icon-woman.png", alt="")
-                                li.main-block__avatar 
-                                    img(src="/img/icon-dog.png", alt="")
-                                li.main-block__avatar 
-                                    img(src="/img/icon-man.png", alt="")
-                                li.main-block__avatar 
-                                    img(src="/img/plus.svg", alt="")
-                            p.main-block__label А это вы
-                        .main-block__bottom-img
-                            img(src="/img/pen.png", alt="")
-                section.name-block.wrapper__name-block 
-                        .name-block__row 
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-1.png", alt="")
-                                .name-block__person
-                                    img(src="/img/persona-2.png", alt="")
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-3.png", alt="")
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-4.png", alt="")
-                            .name-block__letter    
-                                .name-block__person
-                                    img(src="/img/persona-5.png", alt="")
-                        .name-block__column 
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-1.png", alt="")
-                                img(src="/img/letter-m.svg", alt="")
-                                .name-block__person
-                                    img(src="/img/persona-2.png", alt="")
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-3.png", alt="")
-                                img(src="/img/letter-o.svg", alt="")
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-4.png", alt="")
-                                img(src="/img/letter-g.svg", alt="")
-                            .name-block__letter 
-                                .name-block__person
-                                    img(src="/img/persona-5.png", alt="")
-                                img(src="/img/letter-u.svg", alt="")
-                section.info-block.wrapper__info-block
-                    .info-block__top-row 
-                        .info-block__item
-                            .info-block__img 
-                                img(src="/img/iMac.png", alt="")
-                            h3.info-block__title Вся информация как на ладони
-                            p.info-block__description единая строка поиска для всех проектов - где бы ни была задача, вы быстро ее найдете
-                        .info-block__item
-                            h3.info-block__title Ничто не мешает полету мысли
-                            p.info-block__description фиксируйте новые идеи в один клик, прикрепляйте файлы и подробные описания сути задач
-                            .info-block__img 
-                                img(src="/img/Saly-23.png", alt="")
-                    .info-block__top-row 
-                        .info-block__item
-                            h3.info-block__title Порядок в подарок
-                            p.info-block__description  задачи удобно структурировать с помощью чек-листов, меток и пользовательских полей
-                            .info-block__img 
-                                img(src="/img/Folder.png", alt="")
-                            .info-block__flow 
-                                p.info-block__item-flow обновляйте статус задачи 
-                                div.info-block__arrow
-                                p.info-block__item-flow следите за сроками дедлайнов
-                                div.info-block__arrow
-                                p.info-block__item-flow отправляйте завершенные задачи в архив
-                    .info-block__top-row 
-                        .info-block__item
-                            h3.info-block__title Совместная работа на одной доске 
-                            p.info-block__description приглашайте коллег, бизнес-партнеров и заказчиков 
-                        .info-block__item
-                            .info-block__img 
-                                img(src="/img/Saly-31.png", alt="")
-                        .info-block__item
-                            h3.info-block__title Настройка под вас 
-                            p.info-block__description устанавливайте персональный фон для каждого проекта 
-                section.separator-block.wrapper__separator-block
-                    .separator-block__img
-                        img(src="/img/doodle.png", alt="")
-                section.lending-block.wrapper__lending-block
-                    .lending-block__content
-                        .lending-block__info
-                            ul.lending-block__tags 
-                                li.lending-block__tag.lending-block__tag_color_yellow Product marketing
-                                li.lending-block__tag.lending-block__tag_color_white Growth marketing
-                                li.lending-block__tag.lending-block__tag_color_white Creative
-                                li.lending-block__tag.lending-block__tag_color_gray Marketing
-                                li.lending-block__tag.lending-block__tag_color_gray PR
-                            h4.lending-block__title Создание лендинга
-                            p.lending-block__description Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям
-                        .lending-block__screen
-                            .lending-block__content-screen
-                                .lending-block__img
-                                    img(src="/img/Camera.png", alt="")
-                                p.lending-block__name скрин системы
-                section.feedback-block.wrapper__feedback-block
-                    form.feedback-block__form(action="")
-                         h3.feedback-block__title Обратная связь
-                         input.feedback-block__input-email(type="text" placeholder="Электронная почта")
-                         input.feedback-block__input-text(type="text" placeholder="О чем хотите расссказать?")
-                         button.feedback-block__button отправить --&gt;
-                    .feedback-block__img
-                        img(src="/img/cat.png", alt="")
-                
-                    
-
-
-
-
-                        
-
-                        
-
-
+                include css/main/main-block/main-block.pug
+                include css/main/name-block/name-block.pug
+                include css/main/info-block/info-block.pug
+                include css/main/separator-block/separator-block.pug
+                include css/main/lending-block/lending-block.pug
+                include css/main/feedback-block/feedback-block.pug
         script(src="./js/header/header.js") 
 
                     

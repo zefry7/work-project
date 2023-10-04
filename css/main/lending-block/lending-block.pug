@@ -1,0 +1,17 @@
+section.lending-block.wrapper__lending-block
+    .lending-block__content
+        .lending-block__info
+            ul.lending-block__tags 
+             each val, index in lendingTags 
+                case index
+                    when 0: li.lending-block__tag.lending-block__tag_color_yellow= val
+                    when 1
+                    when 2: li.lending-block__tag.lending-block__tag_color_white= val
+                    default: li.lending-block__tag.lending-block__tag_color_gray= val                   
+            h4.lending-block__title Создание лендинга
+            p.lending-block__description Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям
+        .lending-block__screen
+            .lending-block__content-screen
+                .lending-block__img
+                    img(src=lendingImg, alt="")
+                p.lending-block__name скрин системы
