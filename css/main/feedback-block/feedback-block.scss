@@ -4,7 +4,9 @@
     position: relative;
 }
 .wrapper__feedback-block {
+    border-radius: 30px;
     padding: clamp(20px, 4.44vw,64px);
+    background-color: white;
 }
 .feedback-block__form {
     margin-right: 60px;

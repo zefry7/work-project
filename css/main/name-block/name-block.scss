@@ -1,5 +1,5 @@
 .name-block {
-    height: 69.4vw;
+    height: clamp(400px,69.4vw, 1000px);
     width: 100%;
     border-radius: 30px;
     background-color: #2B2B2B;
@@ -28,42 +28,43 @@
     &::after {
         content: "";
         position: absolute;
-        top: 37vw;
+        top: clamp(288px, 37vw ,532px);
+        max-width: 1311px;
         width: 91.1vw;
-        height: 4.86vw;
+        height: clamp(40px, 4.86vw ,70px);
         border-radius: 100%;
         background: #232323;
     }
     & .name-block__letter:nth-child(1) {
         .name-block__person:first-child {
-            top: -6.94vw;
-            left: -7.33vw;
+            top:  clamp(-100px, -6.94vw,-53px);
+            left: clamp(-105px, -7.33vw, -57px);
             z-index: 15;
         }
         .name-block__person:last-child {
-            top: -10.8vw;
-            left: 6vw;
+            top:  clamp(-155px, -10.8vw, 10px);
+            left: clamp(40px, 6vw, 86px);
             z-index: 15;
         }
     }
     & .name-block__letter:nth-child(2) {
         .name-block__person:first-child {
-            top: -7.33vw;
-            left: 2.77vw;
+            top:  clamp(-105px, -7.33vw, -57px);
+            left: clamp(20px, 2.77vw, 40px);
             z-index: 5;
         }
     }
     & .name-block__letter:nth-child(3) {
         .name-block__person:first-child {
-            top: -9.5vw;
-            left: 2.77vw;
+            top:  clamp(-136px, -9.5vw, -73px);
+            left: clamp(20px, 2.77vw, 40px);
             z-index: 10;
         }
     }
     & .name-block__letter:nth-child(4) {
         .name-block__person:first-child {
-            top: -5.55vw;
-            left: -1.5vw;
+            top:  clamp(-80px, -5.55vw, -43px);
+            left: clamp(-21px, -1.5vw, -11px);
             z-index: 10;
         }
     }

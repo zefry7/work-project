@@ -5,6 +5,7 @@
 @import url(./main/info-block/info-block.css);
 @import url(./main/separator-block/separator-block.css);
 @import url(./main/feedback-block/feedback-block.css);
+@import url(./main/lending-block/lending-block.css);
 @font-face {
   font-family: "InterMedium";
   font-weight: 500;

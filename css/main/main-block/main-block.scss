@@ -7,7 +7,7 @@
     &::before {
         content: "";
         position: absolute;
-        bottom: -6.94vw;
+        bottom: clamp(-100px, -6.94vw, -54px);
         left: clamp(20px, 4.44vw, 64px);
         height: 64px;
         width: 64px;
@@ -204,7 +204,7 @@
 
 .main-block__bottom-img {
     position: absolute;
-    bottom: -13.88vw;
+    bottom: clamp(-200px, -13.88vw, -120px);
     left: 50%;
     transform: translateX(-50%);
     width: clamp(300px, 40.48vw ,583px);
