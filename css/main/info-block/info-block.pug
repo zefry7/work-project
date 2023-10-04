@@ -2,20 +2,29 @@ section.info-block.wrapper__info-block
     .info-block__top-row 
         .info-block__item
             .info-block__img 
-                img(src=infoImg[0], alt="")
+                picture 
+                    source(media="(min-width: 768px)", srcset=infoImg[0])
+                    source(media="(min-width: 375px)", srcset=infoImg[4])
+                    img(src=infoImg[0], alt="")
             h3.info-block__title Вся информация как на ладони
             p.info-block__description единая строка поиска для всех проектов - где бы ни была задача, вы быстро ее найдете
         .info-block__item
             h3.info-block__title Ничто не мешает полету мысли
             p.info-block__description фиксируйте новые идеи в один клик, прикрепляйте файлы и подробные описания сути задач
             .info-block__img 
-                img(src=infoImg[1], alt="")
+                picture 
+                    source(media="(min-width: 768px)", srcset=infoImg[1])
+                    source(media="(min-width: 375px)", srcset=infoImg[5])
+                    img(src=infoImg[1], alt="")
     .info-block__top-row 
         .info-block__item
             h3.info-block__title Порядок в подарок
             p.info-block__description  задачи удобно структурировать с помощью чек-листов, меток и пользовательских полей
             .info-block__img 
-                img(src=infoImg[2], alt="")
+                picture 
+                    source(media="(min-width: 768px)", srcset=infoImg[2])
+                    source(media="(min-width: 375px)", srcset=infoImg[6])
+                    img(src=infoImg[2], alt="")
             .info-block__flow 
                 p.info-block__item-flow обновляйте статус задачи 
                 div.info-block__arrow
@@ -28,7 +37,10 @@ section.info-block.wrapper__info-block
             p.info-block__description приглашайте коллег, бизнес-партнеров и заказчиков 
         .info-block__item
             .info-block__img 
-                img(src=infoImg[3], alt="")
+                picture 
+                    source(media="(min-width: 768px)", srcset=infoImg[3])
+                    source(media="(min-width: 375px)", srcset=infoImg[7])
+                    img(src=infoImg[3], alt="")
         .info-block__item
             h3.info-block__title Настройка под вас 
             p.info-block__description устанавливайте персональный фон для каждого проекта 

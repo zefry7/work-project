@@ -132,7 +132,7 @@
             display: inline-block;
             height: 20px;
             width: 20px;
-            background: url(../../../img/cube.svg) center/ 100% no-repeat;
+            background: url(/img/cube.svg) center/ 100% no-repeat;
         }
     }
     .main-block__label:last-child {
@@ -191,7 +191,7 @@
         height: clamp(20px, 2.22vw, 32px);
         width: clamp(20px, 2.22vw, 32px);
         z-index: 100;
-        background: url(../../../img/cursor.svg) center/ 100% no-repeat;
+        background: url(/img/cursor.svg) center/ 100% no-repeat;
     }
 }
         

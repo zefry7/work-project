@@ -1,3 +1,6 @@
 section.separator-block.wrapper__separator-block
     .separator-block__img
-        img(src=separatorImg, alt="")
+        picture 
+            source(media="(min-width: 768px)", srcset=separatorImg[0])
+            source(media="(min-width: 375px)", srcset=separatorImg[1])
+            img(src=separatorImg[0], alt="")

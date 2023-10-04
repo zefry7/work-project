@@ -10,7 +10,7 @@ section.main-block.wrapper__main
             p.main-block__subtitle Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!
         .main-block__bottom-row
             ul.main-block__tags 
-                each val in nameTags 
+                each val in mainTags 
                     li.main-block__tag= val
         .main-block__input-block
             input.main-block__input-seacrh(placeholder="Электронная почта")
@@ -26,4 +26,7 @@ section.main-block.wrapper__main
                         img(src=val, alt="")
             p.main-block__label А это вы
         .main-block__bottom-img
-            img(src=nameImg, alt="")
+            picture 
+                source(media="(min-width: 768px)", srcset=mainImg[0])
+                source(media="(min-width: 375px)", srcset=mainImg[0])
+                img(src=mainImg[0], alt="")

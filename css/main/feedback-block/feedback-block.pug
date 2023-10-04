@@ -5,4 +5,7 @@ section.feedback-block.wrapper__feedback-block
         input.feedback-block__input-text(type="text" placeholder="О чем хотите расссказать?")
         button.feedback-block__button отправить --&gt;
     .feedback-block__img
-        img(src=feedbackImg, alt="")
+        picture 
+            source(media="(min-width: 768px)", srcset=feedbackImg[0])
+            source(media="(min-width: 375px)", srcset=feedbackImg[1])
+            img(src=feedbackImg[0], alt="")

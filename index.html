@@ -9,7 +9,7 @@
   <body> 
     <div class="wpapper">
       <header class="header wrapper__header">
-        <div class="header__block-logo"><img src="./img/logo-cat.svg" alt=""><img src="./img/logo-text.svg" alt=""></div>
+        <div class="header__block-logo"><img src="/img/logo-cat.svg" alt=""><img src="/img/logo-text.svg" alt=""></div>
         <nav class="header__links"> <a class="header__link" href="#">О нас</a><a class="header__link" href="#">Кейсы</a><a class="header__link" href="#">Обратная связь</a>
         </nav>
         <button class="header__button">Войти</button>
@@ -55,7 +55,12 @@
               </ul>
               <p class="main-block__label">А это вы</p>
             </div>
-            <div class="main-block__bottom-img"><img src="/img/pen.png" alt=""></div>
+            <div class="main-block__bottom-img">
+              <picture> 
+                <source media="(min-width: 768px)" srcset="/img/desktop/pen.png">
+                <source media="(min-width: 375px)" srcset="/img/desktop/pen.png"><img src="/img/desktop/pen.png" alt="">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="name-block wrapper__name-block"> 
@@ -76,38 +81,53 @@
           </div>
           <div class="name-block__column"> 
             <div class="name-block__letter"> 
-              <div class="name-block__person"><img src="/img/persona-1.png" alt=""><img src="/img/letter-m.svg" alt=""></div>
+              <div class="name-block__person"><img src="/img/persona-1.png" alt=""></div><img src="/img/letter-m.svg" alt="">
               <div class="name-block__person"><img src="/img/persona-2.png" alt=""></div>
             </div>
             <div class="name-block__letter"> 
-              <div class="name-block__person"><img src="/img/persona-3.png" alt=""><img src="/img/letter-o.svg" alt=""></div>
+              <div class="name-block__person"><img src="/img/persona-3.png" alt=""></div><img src="/img/letter-o.svg" alt="">
             </div>
             <div class="name-block__letter"> 
-              <div class="name-block__person"><img src="/img/persona-4.png" alt=""><img src="/img/letter-g.svg" alt=""></div>
+              <div class="name-block__person"><img src="/img/persona-4.png" alt=""></div><img src="/img/letter-g.svg" alt="">
             </div>
             <div class="name-block__letter"> 
-              <div class="name-block__person"><img src="/img/persona-5.png" alt=""><img src="/img/letter-u.svg" alt=""></div>
+              <div class="name-block__person"><img src="/img/persona-5.png" alt=""></div><img src="/img/letter-u.svg" alt="">
             </div>
           </div>
         </section>
         <section class="info-block wrapper__info-block">
           <div class="info-block__top-row"> 
             <div class="info-block__item">
-              <div class="info-block__img"> <img src="/img/iMac.png" alt=""></div>
+              <div class="info-block__img"> 
+                <picture> 
+                  <source media="(min-width: 768px)" srcset="/img/desktop/iMac.png">
+                  <source media="(min-width: 375px)" srcset="/img/mobile/iMac.png"><img src="/img/desktop/iMac.png" alt="">
+                </picture>
+              </div>
               <h3 class="info-block__title">Вся информация как на ладони</h3>
               <p class="info-block__description">единая строка поиска для всех проектов - где бы ни была задача, вы быстро ее найдете</p>
             </div>
             <div class="info-block__item">
               <h3 class="info-block__title">Ничто не мешает полету мысли</h3>
               <p class="info-block__description">фиксируйте новые идеи в один клик, прикрепляйте файлы и подробные описания сути задач</p>
-              <div class="info-block__img"> <img src="/img/Saly-23.png" alt=""></div>
+              <div class="info-block__img"> 
+                <picture> 
+                  <source media="(min-width: 768px)" srcset="/img/desktop/Saly-23.png">
+                  <source media="(min-width: 375px)" srcset="/img/mobile/Saly-23.png"><img src="/img/desktop/Saly-23.png" alt="">
+                </picture>
+              </div>
             </div>
           </div>
           <div class="info-block__top-row"> 
             <div class="info-block__item">
               <h3 class="info-block__title">Порядок в подарок</h3>
               <p class="info-block__description"> задачи удобно структурировать с помощью чек-листов, меток и пользовательских полей</p>
-              <div class="info-block__img"> <img src="/img/Folder.png" alt=""></div>
+              <div class="info-block__img"> 
+                <picture> 
+                  <source media="(min-width: 768px)" srcset="/img/desktop/Folder.png">
+                  <source media="(min-width: 375px)" srcset="/img/mobile/Folder.png"><img src="/img/desktop/Folder.png" alt="">
+                </picture>
+              </div>
               <div class="info-block__flow"> 
                 <p class="info-block__item-flow">обновляйте статус задачи </p>
                 <div class="info-block__arrow"></div>
@@ -123,7 +143,12 @@
               <p class="info-block__description">приглашайте коллег, бизнес-партнеров и заказчиков </p>
             </div>
             <div class="info-block__item">
-              <div class="info-block__img"> <img src="/img/Saly-31.png" alt=""></div>
+              <div class="info-block__img"> 
+                <picture> 
+                  <source media="(min-width: 768px)" srcset="/img/desktop/Saly-31.png">
+                  <source media="(min-width: 375px)" srcset="/img/mobile/Saly-31.png"><img src="/img/desktop/Saly-31.png" alt="">
+                </picture>
+              </div>
             </div>
             <div class="info-block__item">
               <h3 class="info-block__title">Настройка под вас </h3>
@@ -132,7 +157,12 @@
           </div>
         </section>
         <section class="separator-block wrapper__separator-block">
-          <div class="separator-block__img"><img src="/img/doodle.png" alt=""></div>
+          <div class="separator-block__img">
+            <picture> 
+              <source media="(min-width: 768px)" srcset="/img/desktop/doodle.png">
+              <source media="(min-width: 375px)" srcset="/img/mobile/doodle.png"><img src="/img/desktop/doodle.png" alt="">
+            </picture>
+          </div>
         </section>
         <section class="lending-block wrapper__lending-block">
           <div class="lending-block__content">
@@ -149,7 +179,12 @@
             </div>
             <div class="lending-block__screen">
               <div class="lending-block__content-screen">
-                <div class="lending-block__img"><img src="/img/Camera.png" alt=""></div>
+                <div class="lending-block__img">
+                  <picture> 
+                    <source media="(min-width: 768px)" srcset="/img/desktop/Camera.png">
+                    <source media="(min-width: 375px)" srcset="/img/mobile/Camera.png"><img src="/img/desktop/Camera.png" alt="">
+                  </picture>
+                </div>
                 <p class="lending-block__name">скрин системы</p>
               </div>
             </div>
@@ -162,7 +197,12 @@
             <input class="feedback-block__input-text" type="text" placeholder="О чем хотите расссказать?">
             <button class="feedback-block__button">отправить --&gt;</button>
           </form>
-          <div class="feedback-block__img"><img src="/img/cat.png" alt=""></div>
+          <div class="feedback-block__img">
+            <picture> 
+              <source media="(min-width: 768px)" srcset="/img/desktop/cat.png">
+              <source media="(min-width: 375px)" srcset="/img/mobile/cat.svg"><img src="/img/desktop/cat.png" alt="">
+            </picture>
+          </div>
         </section>
       </main>
     </div>
