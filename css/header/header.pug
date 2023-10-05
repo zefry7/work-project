@@ -1,18 +1,19 @@
-header.header.wrapper__header
-    .header__block-logo
-        img(src=headerImg[0], alt="")
-        img(src=headerImg[1], alt="")
-    nav.header__links 
-        each item in headerLinks
-            a.header__link(href="#")= item
-    button.header__button Войти
-    .burger-menu
-        div.burger-menu__button
-            span 
-            span
-            span
-    .burger-menu__content
+mixin header(content)
+    header.header.wrapper__header
+        .header__block-logo
+            each value in content.headerBlock.images.logo
+                img(src=value.src, alt=value.alt)
         nav.header__links 
-            each item in headerLinks
-                a.header__link(href="#")= item
-        button.header__button Войти
+            each item in content.headerBlock.headerLinks
+                a.header__link(href="" data-scroll=item.dataScroll)= item.name
+        button.header__button !{content.headerBlock.button}
+        .burger-menu
+            div.burger-menu__button
+                span 
+                span
+                span
+        .burger-menu__content
+            nav.header__links 
+                each item in content.headerBlock.headerLinks
+                    a.header__link.burger-menu__link(href="" data-scroll=item.dataScroll)= item.name
+            button.header__button !{content.headerBlock.button}

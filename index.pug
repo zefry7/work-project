@@ -1,3 +1,8 @@
+include css/header/header.pug
+include css/main/main-block/main-block.pug
+include css/main/name-block/name-block.pug
+include css/main/info-block/info-block.pug
+include css/main/separator-block/separator-block.pug
 doctype html
 html(lang="en")
     head
@@ -7,24 +12,225 @@ html(lang="en")
         title Mogu  
     body 
         -var lendingTags = ["Product marketing", "Growth marketing", "Creative", "Marketing", "PR"]  
-        -var headerLinks = ["О нас", "Кейсы", "Обратная связь"]
-        -var mainTags = ["Бесплатно", "Без привязки карты", "2000+ пользователей"]
         
         -var lendingImg = ["/img/desktop/Camera.png", "/img/mobile/Camera.png"]
         -var avatarsImg = ["/img/avatar-you.svg", "/img/icon-woman.png", "/img/icon-dog.png", "/img/icon-man.png", "/img/plus.svg"]
-        -var mainImg = ["/img/desktop/pen.png", "/img/mobile/pen.png"];
         -var nameImg = ["/img/persona-1.png", "/img/persona-2.png", "/img/persona-3.png", "/img/persona-4.png", "/img/persona-5.png", "/img/letter-m.svg", "/img/letter-o.svg", "/img/letter-g.svg", "/img/letter-u.svg"]
         -var infoImg = ["/img/desktop/iMac.png", "/img/desktop/Saly-23.png", "/img/desktop/Folder.png", "/img/desktop/Saly-31.png", "/img/mobile/iMac.png", "/img/mobile/Saly-23.png", "/img/mobile/Folder.png", "/img/mobile/Saly-31.png"]
-        -var headerImg = ["/img/logo-cat.svg", "/img/logo-text.svg"]
-        -var separatorImg = ["/img/desktop/doodle.png", "/img/mobile/doodle.png"]
         -var feedbackImg = ["/img/desktop/cat.png", "/img/mobile/cat.svg"]
+       
+        -   
+            var content= {
+                headerBlock: {
+                    images: {
+                        logo: [
+                            {
+                                src: "/img/logo-cat.svg",
+                                alt: "Логотип сайта"
+                            },
+                            {
+                                src: "/img/logo-text.svg",
+                                alt: "Название сайта"
+                            }
+                        ]
+                    },
+                    headerLinks: [
+                        {
+                          name: "О нас",
+                          dataScroll: "info-block"
+                        }, 
+                        {
+                          name: "Кейсы",
+                          dataScroll: "lending-block"
+                        }, 
+                        {
+                          name: "Обратная связь",
+                          dataScroll: "feedback-block"
+                        }
+                    ],
+                    button: "Войти",
+                },
+                mainBlock: {
+                    title: {
+                        t: "Таск-трекер ",
+                        c: "для креативных ",
+                        b: "команд"
+                    },
+                    subtitle: "Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!",
+                    tags: ["Бесплатно", "Без привязки карты", "2000+ пользователей"],
+                    button: "Начать",
+                    label: ["Совместная работа", "Это ваш милейший коллега", "А это вы"],
+                    images: {
+                        avatars: ["/img/avatar-you.svg", "/img/icon-woman.png", "/img/icon-dog.png", "/img/icon-man.png", "/img/plus.svg"],
+                        imagePen: {
+                            source: [
+                                {
+                                    srcSet: "/img/desktop/pen.png",
+                                    media: "(min-width: 768px)"
+                                },
+                                {
+                                    srcSet: "/img/mobile/pen.png",
+                                    media: "(min-width: 375px)"
+                                }
+                            ],
+                            img: {
+                                src: "/img/desktop/pen.png",
+                                alt: 'Элемент оформления'                
+                            }
+                        }
+                    }
+                },
+                nameBlock: {
+                    images: [
+                        {
+                            src: "/img/persona-1.png",
+                            alt: "Часть оформления"
+                        },
+                        {
+                            src: "/img/persona-2.png",
+                            alt: "Часть оформления"
+                        },
+                        {
+                            src: "/img/persona-3.png",
+                            alt: "Часть оформления"
+                        },
+                        {
+                            src: "/img/persona-4.png",
+                            alt: "Часть оформления"
+                        },
+                        {
+                            src: "/img/persona-5.png",
+                            alt: "Часть оформления"
+                        },
+                        {
+                            src: "/img/letter-m.svg",
+                            alt: "Буква названия"
+                        },
+                        {
+                            src: "/img/letter-o.svg",
+                            alt: "Буква названия"
+                        },
+                        {
+                            src: "/img/letter-g.svg",
+                            alt: "Буква названия"
+                        },
+                        {
+                            src: "/img/letter-u.svg",
+                            alt: "Буква названия"
+                        }
+                    ]
+                },
+                infoBlock: {
+                    title: [
+                        "Вся информация как на ладони",
+                        "Ничто не мешает полету мысли",
+                        "Порядок в подарок",
+                        "Совместная работа на одной доске ",
+                        "Настройка под вас"
+                    ],
+                    desc: [
+                        "единая строка поиска для всех проектов - где бы ни была задача, вы быстро ее найдете",
+                        "фиксируйте новые идеи в один клик, прикрепляйте файлы и подробные описания сути задач",
+                        "задачи удобно структурировать с помощью чек-листов, меток и пользовательских полей",
+                        "обновляйте статус задачи",
+                        "следите за сроками дедлайнов",
+                        "отправляйте завершенные задачи в архив",
+                        "приглашайте коллег, бизнес-партнеров и заказчиков",
+                        "устанавливайте персональный фон для каждого проекта"
+                    ],
+                    images: [
+                        {
+                            source: [
+                                {
+                                    srcSet: "/img/desktop/iMac.png",
+                                    media: "(min-width: 768px)"
+                                },
+                                {
+                                    srcSet: "/img/mobile/iMac.png",
+                                    media: "(min-width: 375px)"
+                                }
+                            ],
+                            img: {
+                                src: "/img/desktop/iMac.png",
+                                alt: 'Элемент оформления'                
+                            }
+                        },
+                        {
+                            source: [
+                                {
+                                    srcSet: "/img/desktop/Saly-23.png",
+                                    media: "(min-width: 768px)"
+                                },
+                                {
+                                    srcSet: "/img/mobile/Saly-23.png",
+                                    media: "(min-width: 375px)"
+                                }
+                            ],
+                            img: {
+                                src: "/img/desktop/Saly-23.png",
+                                alt: 'Элемент оформления'                
+                            }
+                        },
+                        {
+                            source: [
+                                {
+                                    srcSet: "/img/desktop/Folder.png",
+                                    media: "(min-width: 768px)"
+                                },
+                                {
+                                    srcSet: "/img/mobile/Folder.png",
+                                    media: "(min-width: 375px)"
+                                }
+                            ],
+                            img: {
+                                src: "/img/desktop/Folder.png",
+                                alt: 'Элемент оформления'                
+                            }
+                        },
+                        {
+                            source: [
+                                {
+                                    srcSet: "/img/desktop/Saly-31.png",
+                                    media: "(min-width: 768px)"
+                                },
+                                {
+                                    srcSet: "/img/mobile/Saly-31.png",
+                                    media: "(min-width: 375px)"
+                                }
+                            ],
+                            img: {
+                                src: "/img/desktop/Saly-31.png",
+                                alt: 'Элемент оформления'                
+                            }
+                        }
+                    ]
+                },
+                separatorBlock: {
+                    image: {
+                        source: [
+                            {
+                                srcSet: "/img/desktop/doodle.png",
+                                media: "(min-width: 768px)"
+                            },
+                            {
+                                srcSet: "/img/mobile/doodle.png",
+                                media: "(min-width: 375px)"
+                            }
+                        ],
+                        img: {
+                            src: "/img/desktop/doodle.png",
+                            alt: "Элемент оформления"              
+                        }
+                    }
+                }     
+            }
         .wpapper
-            include css/header/header.pug
+            +header(content)
             main.main
-                include css/main/main-block/main-block.pug
-                include css/main/name-block/name-block.pug
-                include css/main/info-block/info-block.pug
-                include css/main/separator-block/separator-block.pug
+                +main(content)
+                +name(content)
+                +info(content)
+                +separator(content) 
                 include css/main/lending-block/lending-block.pug
                 include css/main/feedback-block/feedback-block.pug
         script(src="./js/header/header.js") 

@@ -1,46 +1,47 @@
-section.info-block.wrapper__info-block
-    .info-block__top-row 
-        .info-block__item
-            .info-block__img 
-                picture 
-                    source(media="(min-width: 768px)", srcset=infoImg[0])
-                    source(media="(min-width: 375px)", srcset=infoImg[4])
-                    img(src=infoImg[0], alt="")
-            h3.info-block__title Вся информация как на ладони
-            p.info-block__description единая строка поиска для всех проектов - где бы ни была задача, вы быстро ее найдете
-        .info-block__item
-            h3.info-block__title Ничто не мешает полету мысли
-            p.info-block__description фиксируйте новые идеи в один клик, прикрепляйте файлы и подробные описания сути задач
-            .info-block__img 
-                picture 
-                    source(media="(min-width: 768px)", srcset=infoImg[1])
-                    source(media="(min-width: 375px)", srcset=infoImg[5])
-                    img(src=infoImg[1], alt="")
-    .info-block__top-row 
-        .info-block__item
-            h3.info-block__title Порядок в подарок
-            p.info-block__description  задачи удобно структурировать с помощью чек-листов, меток и пользовательских полей
-            .info-block__img 
-                picture 
-                    source(media="(min-width: 768px)", srcset=infoImg[2])
-                    source(media="(min-width: 375px)", srcset=infoImg[6])
-                    img(src=infoImg[2], alt="")
-            .info-block__flow 
-                p.info-block__item-flow обновляйте статус задачи 
-                div.info-block__arrow
-                p.info-block__item-flow следите за сроками дедлайнов
-                div.info-block__arrow
-                p.info-block__item-flow отправляйте завершенные задачи в архив
-    .info-block__top-row 
-        .info-block__item
-            h3.info-block__title Совместная работа на одной доске 
-            p.info-block__description приглашайте коллег, бизнес-партнеров и заказчиков 
-        .info-block__item
-            .info-block__img 
-                picture 
-                    source(media="(min-width: 768px)", srcset=infoImg[3])
-                    source(media="(min-width: 375px)", srcset=infoImg[7])
-                    img(src=infoImg[3], alt="")
-        .info-block__item
-            h3.info-block__title Настройка под вас 
-            p.info-block__description устанавливайте персональный фон для каждого проекта 
+mixin info(content)
+    section.info-block.wrapper__info-block.anim-block.scroll(data-number="0")
+        .info-block__top-row 
+            .info-block__item
+                .info-block__img 
+                    picture 
+                        each value in content.infoBlock.images[0].source
+                            source(media=value.media, srcset=value.srcSet)
+                        img(src=content.infoBlock.images[0].img.src, alt=content.infoBlock.images[0].img.alt)
+                h3.info-block__title !{content.infoBlock.title[0]}
+                p.info-block__description !{content.infoBlock.desc[0]}
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[1]}
+                p.info-block__description !{content.infoBlock.desc[1]}
+                .info-block__img 
+                    picture 
+                        each value in content.infoBlock.images[1].source
+                            source(media=value.media, srcset=value.srcSet)
+                        img(src=content.infoBlock.images[1].img.src, alt=content.infoBlock.images[1].img.alt)
+        .info-block__top-row 
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[2]}
+                p.info-block__description  !{content.infoBlock.desc[2]}
+                .info-block__img 
+                    picture 
+                        each value in content.infoBlock.images[2].source
+                            source(media=value.media, srcset=value.srcSet)
+                        img(src=content.infoBlock.images[2].img.src, alt=content.infoBlock.images[2].img.alt)
+                .info-block__flow 
+                    p.info-block__item-flow !{content.infoBlock.desc[3]} 
+                    div.info-block__arrow
+                    p.info-block__item-flow !{content.infoBlock.desc[4]}
+                    div.info-block__arrow
+                    p.info-block__item-flow !{content.infoBlock.desc[5]}
+        .info-block__top-row 
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[3]}
+                p.info-block__description !{content.infoBlock.desc[6]} 
+            .info-block__item
+                .info-block__img 
+                    picture 
+                        each value in content.infoBlock.images[3].source
+                            source(media=value.media, srcset=value.srcSet)
+                        img(src=content.infoBlock.images[3].img.src, alt=content.infoBlock.images[3].img.alt)
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[4]}
+                p.info-block__description !{content.infoBlock.desc[7]}

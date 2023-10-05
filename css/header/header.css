@@ -18,6 +18,10 @@
   color: #5B605C;
   padding: 0 16px;
 }
+.header__links .header__link_use {
+  text-shadow: 0 0 20px rgba(34, 47, 220, 0.9921568627);
+  color: #222FDC;
+}
 
 .header__button {
   padding: 0 32px;

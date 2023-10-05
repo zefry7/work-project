@@ -1,32 +1,33 @@
-section.main-block.wrapper__main 
-    .main-block__left
-        .main-block__text
-            h2.main-block__title 
-                | Таск-трекер 
-                br 
-                | для креативных 
-                br
-                | команд
-            p.main-block__subtitle Создавайте доски, приглашайте коллег и партнеров, работайте совместно над задачами!
-        .main-block__bottom-row
-            ul.main-block__tags 
-                each val in mainTags 
-                    li.main-block__tag= val
-        .main-block__input-block
-            input.main-block__input-seacrh(placeholder="Электронная почта")
-            button.main-block__button-search Начать 
-                span
-    .main-block__right
-        p.main-block__label Совместная работа
-        .main-block__center-content
-            p.main-block__label Это ваш милейший коллега 
-            ul.main-block__avatars-row 
-                each val in avatarsImg
-                    li.main-block__avatar 
-                        img(src=val, alt="")
-            p.main-block__label А это вы
-        .main-block__bottom-img
-            picture 
-                source(media="(min-width: 768px)", srcset=mainImg[0])
-                source(media="(min-width: 375px)", srcset=mainImg[0])
-                img(src=mainImg[0], alt="")
+mixin main(content)
+    section.main-block.wrapper__main
+        .main-block__left
+            .main-block__text
+                h2.main-block__title 
+                    | !{content.mainBlock.title.t}
+                    br 
+                    | !{content.mainBlock.title.c}
+                    br 
+                    | !{content.mainBlock.title.b}
+                p.main-block__subtitle !{content.mainBlock.subtitle}
+            .main-block__bottom-row
+                ul.main-block__tags 
+                    each val in content.mainBlock.tags
+                        li.main-block__tag= val
+            .main-block__input-block
+                input.main-block__input-seacrh(placeholder="Электронная почта")
+                button.main-block__button-search !{content.mainBlock.button} 
+                    span
+        .main-block__right
+            p.main-block__label !{content.mainBlock.label[0]} 
+            .main-block__center-content
+                p.main-block__label !{content.mainBlock.label[1]} 
+                ul.main-block__avatars-row 
+                    each val in content.mainBlock.images.avatars
+                        li.main-block__avatar 
+                            img(src=val, alt="")
+                p.main-block__label !{content.mainBlock.label[2]} 
+            .main-block__bottom-img
+                picture 
+                    each value in content.mainBlock.images.imagePen.source 
+                        source(media=value.media, srcset=value.srcSet)
+                    img(src=content.mainBlock.images.imagePen.img.src, alt=content.mainBlock.images.imagePen.img.alt)

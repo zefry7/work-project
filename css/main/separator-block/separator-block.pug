@@ -1,6 +1,7 @@
-section.separator-block.wrapper__separator-block
-    .separator-block__img
-        picture 
-            source(media="(min-width: 768px)", srcset=separatorImg[0])
-            source(media="(min-width: 375px)", srcset=separatorImg[1])
-            img(src=separatorImg[0], alt="")
+mixin separator(content) 
+    section.separator-block.wrapper__separator-block.anim-block
+        .separator-block__img
+            picture 
+                each value in content.separatorBlock.image.source 
+                    source(media=value.media, srcset=value.srcSet)
+                img(src=content.separatorBlock.image.img.src, alt=content.separatorBlock.image.img.alt)

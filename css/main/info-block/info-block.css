@@ -15,8 +15,8 @@
 .wrapper__info-block {
   padding: clamp(20px, 4.44vw, 64px);
   position: relative;
-  top: -50px;
   border-radius: 30px;
+  margin-top: -100px;
   background-color: white;
 }
 .wrapper__info-block .info-block__top-row:nth-child(1) .info-block__item:nth-child(1) {
