@@ -47,6 +47,9 @@
             background-color: #4F23AE;
         }
         .info-block__img  {
+            height: clamp(200px, 29.3vw, 422px); 
+            display: flex;
+            align-items: center;
             position: relative;
             img {
                 width: clamp(210px, 27.77vw ,400px);

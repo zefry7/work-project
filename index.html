@@ -65,7 +65,7 @@
             <div class="main-block__bottom-img">
               <picture> 
                 <source media="(min-width: 768px)" srcset="/img/desktop/pen.png"/>
-                <source media="(min-width: 375px)" srcset="/img/mobile/pen.png"/><img src="/img/desktop/pen.png" alt="Элемент оформления"/>
+                <source media="(max-width: 768px)" srcset="/img/mobile/pen.png"/><img src="/img/desktop/pen.png" alt="Элемент оформления"/>
               </picture>
             </div>
           </div>
@@ -1275,7 +1275,7 @@
               <div class="info-block__img"> 
                 <picture> 
                   <source media="(min-width: 768px)" srcset="/img/desktop/iMac.png"/>
-                  <source media="(min-width: 375px)" srcset="/img/mobile/iMac.png"/><img src="/img/desktop/iMac.png" alt="Элемент оформления"/>
+                  <source media="(max-width: 768px)" srcset="/img/mobile/iMac.png"/><img src="/img/desktop/iMac.png" alt="Элемент оформления"/>
                 </picture>
               </div>
               <h3 class="info-block__title">Вся информация как на ладони</h3>
@@ -1287,7 +1287,7 @@
               <div class="info-block__img"> 
                 <picture> 
                   <source media="(min-width: 768px)" srcset="/img/desktop/Saly-23.png"/>
-                  <source media="(min-width: 375px)" srcset="/img/mobile/Saly-23.png"/><img src="/img/desktop/Saly-23.png" alt="Элемент оформления"/>
+                  <source media="(max-width: 768px)" srcset="/img/mobile/Saly-23.png"/><img src="/img/desktop/Saly-23.png" alt="Элемент оформления"/>
                 </picture>
               </div>
             </div>
@@ -1299,7 +1299,7 @@
               <div class="info-block__img"> 
                 <picture> 
                   <source media="(min-width: 768px)" srcset="/img/desktop/Folder.png"/>
-                  <source media="(min-width: 375px)" srcset="/img/mobile/Folder.png"/><img src="/img/desktop/Folder.png" alt="Элемент оформления"/>
+                  <source media="(max-width: 768px)" srcset="/img/mobile/Folder.png"/><img src="/img/desktop/Folder.png" alt="Элемент оформления"/>
                 </picture>
               </div>
               <div class="info-block__flow"> 
@@ -1320,7 +1320,7 @@
               <div class="info-block__img"> 
                 <picture> 
                   <source media="(min-width: 768px)" srcset="/img/desktop/Saly-31.png"/>
-                  <source media="(min-width: 375px)" srcset="/img/mobile/Saly-31.png"/><img src="/img/desktop/Saly-31.png" alt="Элемент оформления"/>
+                  <source media="(max-width: 768px)" srcset="/img/mobile/Saly-31.png"/><img src="/img/desktop/Saly-31.png" alt="Элемент оформления"/>
                 </picture>
               </div>
             </div>
@@ -1334,7 +1334,7 @@
           <div class="separator-block__img">
             <picture> 
               <source media="(min-width: 768px)" srcset="/img/desktop/doodle.png"/>
-              <source media="(min-width: 375px)" srcset="/img/mobile/doodle.png"/><img src="/img/desktop/doodle.png" alt="Элемент оформления"/>
+              <source media="(max-width: 768px)" srcset="/img/mobile/doodle.png"/><img src="/img/desktop/doodle.png" alt="Элемент оформления"/>
             </picture>
           </div>
         </section>
@@ -1343,19 +1343,19 @@
             <div class="lending-block__info">
               <ul class="lending-block__tags">
                 <li class="lending-block__tag">
-                  <input class="lending-block__input" type="radio" name="tag" checked="checked"/><span>Product marketing</span>
+                  <input class="lending-block__input" type="radio" name="tag" data-desc="Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям" checked="checked"/><span>Product marketing</span>
                 </li>
                 <li class="lending-block__tag">
-                  <input class="lending-block__input" type="radio" name="tag"/><span>Growth marketing</span>
+                  <input class="lending-block__input" type="radio" name="tag" data-desc="2"/><span>Growth marketing</span>
                 </li>
                 <li class="lending-block__tag">
-                  <input class="lending-block__input" type="radio" name="tag"/><span>Creative</span>
+                  <input class="lending-block__input" type="radio" name="tag" data-desc="3"/><span>Creative</span>
                 </li>
                 <li class="lending-block__tag">
-                  <input class="lending-block__input" type="radio" name="tag"/><span>Marketing</span>
+                  <input class="lending-block__input" type="radio" name="tag" data-desc="4"/><span>Marketing</span>
                 </li>
                 <li class="lending-block__tag">
-                  <input class="lending-block__input" type="radio" name="tag"/><span>PR</span>
+                  <input class="lending-block__input" type="radio" name="tag" data-desc="5"/><span>PR</span>
                 </li>
               </ul>
               <h4 class="lending-block__title">Создание лендинга</h4>
@@ -1366,7 +1366,7 @@
                 <div class="lending-block__img">
                   <picture> 
                     <source media="(min-width: 768px)" srcset="/img/desktop/Camera.png"/>
-                    <source media="(min-width: 375px)" srcset="/img/mobile/Camera.png"/><img src="/img/desktop/Camera.png" alt="Элемент оформления"/>
+                    <source media="(max-width: 768px)" srcset="/img/mobile/Camera.png"/><img src="/img/desktop/Camera.png" alt="Элемент оформления"/>
                   </picture>
                 </div>
                 <p class="lending-block__name">скрин системы</p>
@@ -1384,18 +1384,16 @@
           <div class="feedback-block__cat">
             <div class="feedback-block__img">
               <picture> 
-                <source media="(min-width: 768px)" srcset="/img/desktop/cat.svg"/>
-                <source media="(min-width: 375px)" srcset="/img/mobile/cat.svg"/><img src="/img/desktop/cat.svg" alt="Элемент оформления"/>
+                <source media="(min-width: 768px)" srcset="/img/desktop/cat.png"/>
+                <source media="(max-width: 768px)" srcset="/img/mobile/cat.svg"/><img src="/img/desktop/cat.png" alt="Элемент оформления"/>
               </picture>
             </div>
-            <div class="feedback-block__eye feedback-block__eye-left"><img src="/img/eye-cat.svg" alt=""/></div>
-            <div class="feedback-block__eye feedback-block__eye-right"><img src="/img/eye-cat.svg" alt=""/></div>
           </div>
         </section>
       </main>
     </div>
     <script src="/js/header/header.js"> </script>
     <script src="/js/mainBlock/mainBlock.js"> </script>
-    <script src="/js/feedbackBlock/feedbackBlock.js"> </script>
+    <script src="/js/lendingBlock/lendingBlock.js"> </script>
   </body>
 </html>

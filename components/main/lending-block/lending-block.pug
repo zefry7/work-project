@@ -6,13 +6,13 @@ mixin lending(content)
                     each val, index in content.lendingBlock.tags 
                         case index
                             when 0: li.lending-block__tag
-                                        input.lending-block__input(type="radio", name="tag" checked)
+                                        input.lending-block__input(type="radio", name="tag" data-desc=content.lendingBlock.desc[index] checked)
                                         span= val                
                             default: li.lending-block__tag
-                                        input.lending-block__input(type="radio", name="tag")
+                                        input.lending-block__input(type="radio", name="tag" data-desc=content.lendingBlock.desc[index])
                                         span= val   
                 h4.lending-block__title !{content.lendingBlock.title}
-                p.lending-block__description !{content.lendingBlock.desc}
+                p.lending-block__description !{content.lendingBlock.desc[0]}
             .lending-block__screen
                 .lending-block__content-screen
                     .lending-block__img

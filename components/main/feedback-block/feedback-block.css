@@ -92,22 +92,6 @@
   height: auto;
 }
 
-.feedback-block__eye-left {
-  position: absolute;
-  top: 60%;
-  left: 77%;
-  height: 40px;
-  width: 40px;
-}
-
-.feedback-block__eye-right {
-  position: absolute;
-  top: 65%;
-  left: 83%;
-  height: 40px;
-  width: 40px;
-}
-
 @media (max-width: 768px) {
   .feedback-block__form {
     width: 100%;

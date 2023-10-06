@@ -22,6 +22,7 @@
         svg {
             width: clamp(180px, 31.25vw, 450px);
             height: auto;
+            transform: scale(1.2);
         }
         .head,
         .center,
@@ -61,8 +62,17 @@
 
     & .name-block__letter:nth-child(2) {
         svg {
+            position: relative;
+            top: -40px;
             width: clamp(150px, 25.69vw, 370px);
             height: auto;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            svg {
+                transform: scale(1.2) rotatey(180deg);
+            }
         }
 
         .h3-top {
@@ -72,8 +82,11 @@
 
     & .name-block__letter:nth-child(3) {
         svg {
+            position: relative;
+            top: -30px;
             width: clamp(150px, 22.22vw, 320px);
             height: auto;
+            transform: scale(1.2);
         }
 
         .h-4-arm-1,
@@ -102,8 +115,11 @@
 
     & .name-block__letter:nth-child(4) {
         svg {
+            position: relative;
+            top: -20px;
             width: clamp(130px, 17.26vw, 250px);
             height: auto;
+            transform: scale(1.2);
         }
 
         .Vector_33,
@@ -138,14 +154,6 @@
         }
     }
 }
-
-.name-block__letter {
-    img {
-        height: 141px;
-        width: 150px;
-    }
-}
-
 
 @media (max-width: 768px) {
     .name-block {

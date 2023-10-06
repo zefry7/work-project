@@ -16,7 +16,7 @@
 }
 
 .wrapper__main {
-  margin-top: 80px;
+  margin-top: clamp(80px, 9vw, 130px);
   padding: 15px clamp(20px, 4.44vw, 64px);
   margin-bottom: clamp(64px, 8.88vw, 128px);
 }

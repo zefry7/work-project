@@ -71,7 +71,7 @@ html(lang="en")
                                 },
                                 {
                                     srcSet: "/img/mobile/pen.png",
-                                    media: "(min-width: 375px)"
+                                    media: "(max-width: 768px)"
                                 }
                             ],
                             img: {
@@ -98,27 +98,7 @@ html(lang="en")
                         {
                             src: "/img/b4.svg",
                             alt: "Часть оформления"
-                        },
-                        //- {
-                        //-     src: "/img/persona-5.png",
-                        //-     alt: "Часть оформления"
-                        //- },
-                        //- {
-                        //-     src: "/img/letter-m.svg",
-                        //-     alt: "Буква названия"
-                        //- },
-                        //- {
-                        //-     src: "/img/letter-o.svg",
-                        //-     alt: "Буква названия"
-                        //- },
-                        //- {
-                        //-     src: "/img/letter-g.svg",
-                        //-     alt: "Буква названия"
-                        //- },
-                        //- {
-                        //-     src: "/img/letter-u.svg",
-                        //-     alt: "Буква названия"
-                        //- }
+                        }
                     ]
                 },
                 infoBlock: {
@@ -148,7 +128,7 @@ html(lang="en")
                                 },
                                 {
                                     srcSet: "/img/mobile/iMac.png",
-                                    media: "(min-width: 375px)"
+                                    media: "(max-width: 768px)"
                                 }
                             ],
                             img: {
@@ -164,7 +144,7 @@ html(lang="en")
                                 },
                                 {
                                     srcSet: "/img/mobile/Saly-23.png",
-                                    media: "(min-width: 375px)"
+                                    media: "(max-width: 768px)"
                                 }
                             ],
                             img: {
@@ -180,7 +160,7 @@ html(lang="en")
                                 },
                                 {
                                     srcSet: "/img/mobile/Folder.png",
-                                    media: "(min-width: 375px)"
+                                    media: "(max-width: 768px)"
                                 }
                             ],
                             img: {
@@ -196,7 +176,7 @@ html(lang="en")
                                 },
                                 {
                                     srcSet: "/img/mobile/Saly-31.png",
-                                    media: "(min-width: 375px)"
+                                    media: "(max-width: 768px)"
                                 }
                             ],
                             img: {
@@ -215,7 +195,7 @@ html(lang="en")
                             },
                             {
                                 srcSet: "/img/mobile/doodle.png",
-                                media: "(min-width: 375px)"
+                                media: "(max-width: 768px)"
                             }
                         ],
                         img: {
@@ -226,7 +206,13 @@ html(lang="en")
                 },
                 lendingBlock: {
                     title: "Создание лендинга",
-                    desc: "Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям",
+                    desc: [
+                        "Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям",
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
                     name: "скрин системы",
                     tags: ["Product marketing", "Growth marketing", "Creative", "Marketing", "PR"], 
                     image: {
@@ -237,7 +223,7 @@ html(lang="en")
                             },
                             {
                                 srcSet: "/img/mobile/Camera.png",
-                                media: "(min-width: 375px)"
+                                media: "(max-width: 768px)"
                             }
                         ],
                         img: {
@@ -253,16 +239,16 @@ html(lang="en")
                     image: {
                         source: [
                             {
-                                srcSet: "/img/desktop/cat.svg",
+                                srcSet: "/img/desktop/cat.png",
                                 media: "(min-width: 768px)"
                             },
                             {
                                 srcSet: "/img/mobile/cat.svg",
-                                media: "(min-width: 375px)"
+                                media: "(max-width: 768px)"
                             }
                         ],
                         img: {
-                            src: "/img/desktop/cat.svg",
+                            src: "/img/desktop/cat.png",
                             alt: "Элемент оформления"              
                         }
                     }
@@ -280,6 +266,7 @@ html(lang="en")
                 +feedback(content)
         script(src="/js/header/header.js") 
         script(src="/js/mainBlock/mainBlock.js") 
-        script(src="/js/feedbackBlock/feedbackBlock.js") 
+        script(src="/js/lendingBlock/lendingBlock.js") 
+        
 
                     

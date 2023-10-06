@@ -30,6 +30,8 @@
 .name-block__letters .name-block__letter:nth-child(1) svg {
   width: clamp(180px, 31.25vw, 450px);
   height: auto;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .name-block__letters .name-block__letter:nth-child(1) .head,
 .name-block__letters .name-block__letter:nth-child(1) .center,
@@ -68,16 +70,30 @@
           transform-origin: top;
 }
 .name-block__letters .name-block__letter:nth-child(2) svg {
+  position: relative;
+  top: -40px;
   width: clamp(150px, 25.69vw, 370px);
   height: auto;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .name-block__letters .name-block__letter:nth-child(2) svg {
+    -webkit-transform: scale(1.2) rotatey(180deg);
+            transform: scale(1.2) rotatey(180deg);
+  }
 }
 .name-block__letters .name-block__letter:nth-child(2) .h3-top {
   -webkit-animation: head 2s linear infinite;
           animation: head 2s linear infinite;
 }
 .name-block__letters .name-block__letter:nth-child(3) svg {
+  position: relative;
+  top: -30px;
   width: clamp(150px, 22.22vw, 320px);
   height: auto;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .name-block__letters .name-block__letter:nth-child(3) .h-4-arm-1,
 .name-block__letters .name-block__letter:nth-child(3) .h-4-arm-2,
@@ -103,8 +119,12 @@
           animation: picture 3s linear infinite;
 }
 .name-block__letters .name-block__letter:nth-child(4) svg {
+  position: relative;
+  top: -20px;
   width: clamp(130px, 17.26vw, 250px);
   height: auto;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .name-block__letters .name-block__letter:nth-child(4) .Vector_33,
 .name-block__letters .name-block__letter:nth-child(4) .Vector_29,
@@ -137,11 +157,6 @@
           animation: move-hand 2s linear 0.5s infinite;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-}
-
-.name-block__letter img {
-  height: 141px;
-  width: 150px;
 }
 
 @media (max-width: 768px) {

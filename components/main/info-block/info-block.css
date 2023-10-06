@@ -55,6 +55,13 @@
   background-color: #4F23AE;
 }
 .wrapper__info-block .info-block__top-row:nth-child(2) .info-block__img {
+  height: clamp(200px, 29.3vw, 422px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   -webkit-animation: move-left 4s linear infinite;
           animation: move-left 4s linear infinite;
