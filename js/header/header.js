@@ -49,9 +49,7 @@ const list = document.querySelectorAll(".anim-block")
 list.forEach((value) => {
     document.addEventListener("scroll", () => {
         const posBlock = value.getBoundingClientRect().top
-        const heightBlock = document.getElementsByClassName(value.classList[0])[0].getBoundingClientRect().height
-
-        console.log(posBlock);
+        
         if (posBlock - 5 * window.innerHeight / 6 < 0) {
             value.classList.add("anim-block_active");
         }

@@ -14,7 +14,8 @@
           justify-content: center;
 }
 
-.name-block__row {
+.name-block__letters {
+  margin-top: -100px;
   width: 75.69vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,261 +26,236 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
-.name-block__row::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  max-width: 1090px;
-  width: 75.69vw;
-  height: 333px;
-  background: url(/img/name.png) center/100% no-repeat;
-  z-index: 10;
-}
-.name-block__row::after {
-  content: "";
-  position: absolute;
-  top: clamp(288px, 37vw, 532px);
-  max-width: 1311px;
-  width: 91.1vw;
-  height: clamp(40px, 4.86vw, 70px);
-  border-radius: 100%;
-  background: #232323;
-}
-.name-block__row .name-block__letter:nth-child(1) .name-block__person:first-child {
-  top: clamp(-100px, -6.94vw, -53px);
-  left: clamp(-105px, -7.33vw, -57px);
-  z-index: 15;
-}
-.name-block__row .name-block__letter:nth-child(1) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-row 3s linear infinite;
-          animation: move-row 3s linear infinite;
-}
-.name-block__row .name-block__letter:nth-child(1) .name-block__person:last-child {
-  top: clamp(-155px, -10.8vw, 10px);
-  left: clamp(40px, 6vw, 86px);
-  z-index: 15;
-}
-.name-block__row .name-block__letter:nth-child(1) .name-block__person:last-child img {
-  position: relative;
-  -webkit-animation: move-row 3s linear 0.2s infinite;
-          animation: move-row 3s linear 0.2s infinite;
-}
-.name-block__row .name-block__letter:nth-child(2) .name-block__person:first-child {
-  top: clamp(-105px, -7.33vw, -57px);
-  left: clamp(20px, 2.77vw, 40px);
-  z-index: 5;
-}
-.name-block__row .name-block__letter:nth-child(2) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-row 3s linear 0.4s infinite;
-          animation: move-row 3s linear 0.4s infinite;
-}
-.name-block__row .name-block__letter:nth-child(3) .name-block__person:first-child {
-  top: clamp(-136px, -9.5vw, -73px);
-  left: clamp(20px, 2.77vw, 40px);
-  z-index: 10;
-}
-.name-block__row .name-block__letter:nth-child(3) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-row 3s linear 0.6s infinite;
-          animation: move-row 3s linear 0.6s infinite;
-}
-.name-block__row .name-block__letter:nth-child(4) .name-block__person:first-child {
-  top: clamp(-80px, -5.55vw, -43px);
-  left: clamp(-21px, -1.5vw, -11px);
-  z-index: 10;
-}
-.name-block__row .name-block__letter:nth-child(4) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-row 3s linear 0.8s infinite;
-          animation: move-row 3s linear 0.8s infinite;
-}
-@-webkit-keyframes move-row {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -5px;
-  }
-  50% {
-    top: 0px;
-  }
-  75% {
-    top: 5px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes move-row {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -5px;
-  }
-  50% {
-    top: 0px;
-  }
-  75% {
-    top: 5px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
-.name-block__person {
-  position: relative;
-}
-.name-block__person img {
-  max-width: 100%;
+.name-block__letters .name-block__letter:nth-child(1) svg {
+  width: clamp(180px, 31.25vw, 450px);
   height: auto;
 }
+.name-block__letters .name-block__letter:nth-child(1) .head,
+.name-block__letters .name-block__letter:nth-child(1) .center,
+.name-block__letters .name-block__letter:nth-child(1) .tr-5,
+.name-block__letters .name-block__letter:nth-child(1) .tr-4,
+.name-block__letters .name-block__letter:nth-child(1) .tr-3,
+.name-block__letters .name-block__letter:nth-child(1) .tr-2,
+.name-block__letters .name-block__letter:nth-child(1) .tr-1 {
+  -webkit-animation: picture 2s linear infinite;
+          animation: picture 2s linear infinite;
+}
+.name-block__letters .name-block__letter:nth-child(1) .Vector_50,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_79,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_77,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_80,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_81,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_82,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_83,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_84,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_85,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_86,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_78,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_52,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_53,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_51,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_88,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_87,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_40,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_41,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_38,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_39,
+.name-block__letters .name-block__letter:nth-child(1) .Vector_44 {
+  -webkit-animation: rotate-hand 2s linear infinite;
+          animation: rotate-hand 2s linear infinite;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+.name-block__letters .name-block__letter:nth-child(2) svg {
+  width: clamp(150px, 25.69vw, 370px);
+  height: auto;
+}
+.name-block__letters .name-block__letter:nth-child(2) .h3-top {
+  -webkit-animation: head 2s linear infinite;
+          animation: head 2s linear infinite;
+}
+.name-block__letters .name-block__letter:nth-child(3) svg {
+  width: clamp(150px, 22.22vw, 320px);
+  height: auto;
+}
+.name-block__letters .name-block__letter:nth-child(3) .h-4-arm-1,
+.name-block__letters .name-block__letter:nth-child(3) .h-4-arm-2,
+.name-block__letters .name-block__letter:nth-child(3) .picture,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_70,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_44,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_45,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_37,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_72,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_71,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_73,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_38,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_47,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_35,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_42,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_40,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_43,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_48,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_39,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_46,
+.name-block__letters .name-block__letter:nth-child(3) .Vector_41 {
+  -webkit-animation: picture 3s linear infinite;
+          animation: picture 3s linear infinite;
+}
+.name-block__letters .name-block__letter:nth-child(4) svg {
+  width: clamp(130px, 17.26vw, 250px);
+  height: auto;
+}
+.name-block__letters .name-block__letter:nth-child(4) .Vector_33,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_29,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_57,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_30,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_37,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_25,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_27,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_26,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_28,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_32,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_31,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_24,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_23,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_66,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_70,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_71,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_72,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_61,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_67,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_62,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_65,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_64,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_69,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_63,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_68,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_60,
+.name-block__letters .name-block__letter:nth-child(4) .Vector_59 {
+  -webkit-animation: move-hand 2s linear 0.5s infinite;
+          animation: move-hand 2s linear 0.5s infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
 
-.name-block__column {
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.name-block__column .name-block__letter {
-  position: relative;
-}
-.name-block__column .name-block__letter img {
-  position: relative;
-  z-index: 10;
-}
-.name-block__column .name-block__letter:not(:last-child) {
-  margin-bottom: 70px;
-}
-.name-block__column .name-block__letter:first-child {
-  z-index: 1;
-}
-.name-block__column .name-block__letter:first-child::before {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: -30%;
-  display: inline-block;
-  width: 292px;
-  height: 30px;
-  border-radius: 100%;
-  z-index: -1;
-  background-color: #232323;
-}
-.name-block__column .name-block__person {
-  position: absolute;
-}
-.name-block__column .name-block__letter:nth-child(1) .name-block__person:first-child {
-  top: -100px;
-  left: -70px;
-  width: 180px;
-  z-index: 15;
-}
-.name-block__column .name-block__letter:nth-child(1) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-column 3s linear infinite;
-          animation: move-column 3s linear infinite;
-}
-.name-block__column .name-block__letter:nth-child(1) .name-block__person:last-child {
-  top: 10px;
-  left: 40px;
-  width: 165px;
-  z-index: 15;
-}
-.name-block__column .name-block__letter:nth-child(1) .name-block__person:last-child img {
-  position: relative;
-  -webkit-animation: move-column 3s linear 0.2s infinite;
-          animation: move-column 3s linear 0.2s infinite;
-}
-.name-block__column .name-block__letter:nth-child(2) .name-block__person:first-child {
-  top: -55px;
-  left: -25px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  z-index: 5;
-  width: 182px;
-}
-.name-block__column .name-block__letter:nth-child(2) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-column 3s linear 0.4s infinite;
-          animation: move-column 3s linear 0.4s infinite;
-}
-.name-block__column .name-block__letter:nth-child(3) .name-block__person:first-child {
-  top: -80px;
-  left: 50px;
-  z-index: 15;
-  width: 114px;
-}
-.name-block__column .name-block__letter:nth-child(3) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-column 3s linear 0.6s infinite;
-          animation: move-column 3s linear 0.6s infinite;
-}
-.name-block__column .name-block__letter:nth-child(4) .name-block__person:first-child {
-  top: -35px;
-  left: -40px;
-  z-index: 15;
-  width: 170px;
-}
-.name-block__column .name-block__letter:nth-child(4) .name-block__person:first-child img {
-  position: relative;
-  -webkit-animation: move-column 3s linear 0.8s infinite;
-          animation: move-column 3s linear 0.8s infinite;
-}
-@-webkit-keyframes move-column {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -5px;
-  }
-  50% {
-    top: 0px;
-  }
-  75% {
-    top: 5px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes move-column {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -5px;
-  }
-  50% {
-    top: 0px;
-  }
-  75% {
-    top: 5px;
-  }
-  100% {
-    top: 0px;
-  }
+.name-block__letter img {
+  height: 141px;
+  width: 150px;
 }
 
 @media (max-width: 768px) {
   .name-block {
-    height: 1100px;
+    height: 1000px;
   }
-  .name-block__row {
-    display: none;
+  .name-block__letters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .name-block__column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}
+@-webkit-keyframes head {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+@keyframes head {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes move-hand {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@keyframes move-hand {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+@-webkit-keyframes rotate-hand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@keyframes rotate-hand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@-webkit-keyframes picture {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes picture {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }

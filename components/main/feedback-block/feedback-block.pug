@@ -5,5 +5,10 @@ mixin feedback(content)
             input.feedback-block__input-email(type="email" placeholder=content.feedbackBlock.placeholder[0])
             textarea.feedback-block__input-text(name="text" placeholder=content.feedbackBlock.placeholder[1])
             button.feedback-block__button !{content.feedbackBlock.button}
-        .feedback-block__img
-            +picture(content.feedbackBlock.image)
+        .feedback-block__cat
+            .feedback-block__img
+                +picture(content.feedbackBlock.image)
+            .feedback-block__eye.feedback-block__eye-left
+                img(src="/img/eye-cat.svg", alt="")
+            .feedback-block__eye.feedback-block__eye-right
+                img(src="/img/eye-cat.svg", alt="")

@@ -47,10 +47,14 @@
   color: #9F9F9F;
   background-color: #C1BEB4;
   cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .lending-block__tag:hover {
   color: #5B605C;
   background-color: white;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .lending-block__tag:has(.lending-block__input:checked) {
   color: black;

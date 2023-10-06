@@ -58,6 +58,13 @@
         color: black;
     }
 }
+.feedback-block__cat {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 .feedback-block__img {
     position: absolute;
     right: 0;
@@ -68,6 +75,20 @@
         width: clamp(250px, 31.18vw, 449px);
         height: auto;
     }
+}
+.feedback-block__eye-left {
+    position: absolute;
+    top: 60%;
+    left: 77%;
+    height: 40px;
+    width: 40px;
+}
+.feedback-block__eye-right {
+    position: absolute;
+    top: 65%;
+    left: 83%;
+    height: 40px;
+    width: 40px;
 }
 
 @media (max-width: 768px) {

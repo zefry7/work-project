@@ -36,9 +36,11 @@
     color: #9F9F9F;
     background-color: #C1BEB4;
     cursor: pointer;
+    transition: all 0.1s linear;
     &:hover {
         color: #5B605C;
         background-color: white; 
+        transition: all 0.1s linear;
     }
     &:has(.lending-block__input:checked) {
         color: black;

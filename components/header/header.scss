@@ -65,6 +65,7 @@
     cursor: pointer;
 
     span {
+        transition: all 0.3s linear;
         height: 2px;
         width: 100%;
         background-color: #222FDC;
@@ -77,15 +78,18 @@
         display: none;
     }
     span:nth-child(1) {
+        transition: all 0.3s linear;
         transform: rotate(45deg) translateY(-50%);
         top: 50%;
     }
 
     span:nth-child(2) {
-        display: none;
+        width: 0;
+        transition: all 0.1s linear;
     }
 
     span:nth-child(3) {
+        transition: all 0.3s linear;
         transform: rotate(-45deg) translateY(50%);
         bottom: 50%;
     }
