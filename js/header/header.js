@@ -44,23 +44,38 @@ logo.addEventListener("click", (event) => {
 })
 
 
-const addAnim = (value) => {
-    value.forEach(el => {
-        if (el.target.className.indexOf("anim-block_active") == -1)
-            el.target.classList.toggle("anim-block_active", el.isIntersecting)
-    })
-}
-const options = {
-    rootMagin: "0px 0px 0px 200px",
-    threshold: 0
-}
-
-const observer = new IntersectionObserver(addAnim, options)
-
 const list = document.querySelectorAll(".anim-block")
-list.forEach(value => {
-    observer.observe(value)
+
+list.forEach((value) => {
+    document.addEventListener("scroll", () => {
+        const posBlock = value.getBoundingClientRect().top
+        const heightBlock = document.getElementsByClassName(value.classList[0])[0].getBoundingClientRect().height
+
+        console.log(posBlock);
+        if (posBlock - 5 * window.innerHeight / 6 < 0) {
+            value.classList.add("anim-block_active");
+        }
+    })
 })
+
+
+// const addAnim = (value) => {
+//     value.forEach(el => {
+//         if (el.target.className.indexOf("anim-block_active") == -1)
+//             el.target.classList.toggle("anim-block_active", el.isIntersecting)
+//     })
+// }
+// const options = {
+//     rootMagin: "0px 0px 0px 200px",
+//     threshold: 0
+// }
+
+// const observer = new IntersectionObserver(addAnim, options)
+
+// const list = document.querySelectorAll(".anim-block")
+// list.forEach(value => {
+//     observer.observe(value)
+// })
 
 
 const listScroll = document.querySelectorAll(".scroll")

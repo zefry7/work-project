@@ -1,0 +1,30 @@
+mixin name(content)
+    section.name-block.wrapper__name-block.anim-block
+        .name-block__row 
+            each value, index in src=content.nameBlock.images
+                case index
+                    when 0: .name-block__letter 
+                                .name-block__person
+                                    img(src=value[0].src, alt=value[0].alt)
+                                .name-block__person
+                                    img(src=value[1].src, alt=value[1].alt)
+                    when 1
+                    when 2
+                    when 3: .name-block__letter 
+                                .name-block__person
+                                    img(src=value.src, alt=value.alt)
+        .name-block__column 
+            each value, index in src=content.nameBlock.images
+                case index
+                    when 0: .name-block__letter 
+                                .name-block__person
+                                    img(src=value[0].src, alt=value[0].alt)
+                                img(src=content.nameBlock.images[index + 4].src, alt=content.nameBlock.images[index + 4].alt)
+                                .name-block__person
+                                    img(src=value[1].src, alt=value[1].alt)
+                    when 1
+                    when 2
+                    when 3: .name-block__letter 
+                                .name-block__person
+                                    img(src=value.src, alt=value.alt)
+                                img(src=content.nameBlock.images[index + 4].src, alt=content.nameBlock.images[index + 4].alt)

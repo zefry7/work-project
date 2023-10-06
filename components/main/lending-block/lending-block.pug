@@ -1,0 +1,16 @@
+mixin lending(content)
+    section.lending-block.wrapper__lending-block.anim-block.scroll(data-number="1")
+        .lending-block__content
+            .lending-block__info
+                ul.lending-block__tags
+                    each val in content.lendingBlock.tags 
+                        li.lending-block__tag
+                            input.lending-block__input(type="radio", name="tag")
+                            span= val                
+                h4.lending-block__title !{content.lendingBlock.title}
+                p.lending-block__description !{content.lendingBlock.desc}
+            .lending-block__screen
+                .lending-block__content-screen
+                    .lending-block__img
+                        +picture(content.lendingBlock.image)
+                    p.lending-block__name !{content.lendingBlock.name}

@@ -1,0 +1,35 @@
+mixin info(content)
+    section.info-block.wrapper__info-block.anim-block.scroll(data-number="0")
+        .info-block__top-row 
+            .info-block__item
+                .info-block__img 
+                    +picture(content.infoBlock.images[0])
+                h3.info-block__title !{content.infoBlock.title[0]}
+                p.info-block__description !{content.infoBlock.desc[0]}
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[1]}
+                p.info-block__description !{content.infoBlock.desc[1]}
+                .info-block__img 
+                    +picture(content.infoBlock.images[1])
+        .info-block__top-row 
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[2]}
+                p.info-block__description  !{content.infoBlock.desc[2]}
+                .info-block__img 
+                    +picture(content.infoBlock.images[2])
+                .info-block__flow 
+                    p.info-block__item-flow !{content.infoBlock.desc[3]} 
+                    div.info-block__arrow
+                    p.info-block__item-flow !{content.infoBlock.desc[4]}
+                    div.info-block__arrow
+                    p.info-block__item-flow !{content.infoBlock.desc[5]}
+        .info-block__top-row 
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[3]}
+                p.info-block__description !{content.infoBlock.desc[6]} 
+            .info-block__item
+                .info-block__img 
+                   +picture(content.infoBlock.images[3])
+            .info-block__item
+                h3.info-block__title !{content.infoBlock.title[4]}
+                p.info-block__description !{content.infoBlock.desc[7]}

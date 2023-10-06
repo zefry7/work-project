@@ -1,0 +1,9 @@
+mixin feedback(content)
+    section.feedback-block.wrapper__feedback-block.anim-block.scroll(data-number="2")
+        .feedback-block__form
+            h3.feedback-block__title !{content.feedbackBlock.title}
+            input.feedback-block__input-email(type="email" placeholder=content.feedbackBlock.placeholder[0])
+            textarea.feedback-block__input-text(name="text" placeholder=content.feedbackBlock.placeholder[1])
+            button.feedback-block__button !{content.feedbackBlock.button}
+        .feedback-block__img
+            +picture(content.feedbackBlock.image)

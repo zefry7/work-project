@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./components/style.css">
     <title>Mogu  </title>
   </head>
   <body> 
@@ -32,14 +32,20 @@
             </div>
             <div class="main-block__bottom-row">
               <ul class="main-block__tags"> 
-                <li class="main-block__tag">Бесплатно</li>
-                <li class="main-block__tag">Без привязки карты</li>
-                <li class="main-block__tag">2000+ пользователей</li>
+                <li class="main-block__tag">
+                  <input class="main-block__input" type="checkbox" name="tag"/><span>Бесплатно</span>
+                </li>
+                <li class="main-block__tag">
+                  <input class="main-block__input" type="checkbox" name="tag"/><span>Без привязки карты</span>
+                </li>
+                <li class="main-block__tag">
+                  <input class="main-block__input" type="checkbox" name="tag"/><span>2000+ пользователей</span>
+                </li>
               </ul>
             </div>
             <div class="main-block__input-block">
               <input class="main-block__input-seacrh" placeholder="Электронная почта"/>
-              <button class="main-block__button-search">Начать <span></span></button>
+              <button class="main-block__button-search">Начать </button>
             </div>
           </div>
           <div class="main-block__right">
@@ -62,6 +68,7 @@
               </picture>
             </div>
           </div>
+          <div class="main-block__arrow"></div>
         </section>
         <section class="name-block wrapper__name-block anim-block">
           <div class="name-block__row"> 
@@ -75,7 +82,7 @@
             <div class="name-block__letter"> 
               <div class="name-block__person"><img src="/img/persona-4.png" alt="Часть оформления"/></div>
             </div>
-            <div class="name-block__letter">   
+            <div class="name-block__letter"> 
               <div class="name-block__person"><img src="/img/persona-5.png" alt="Часть оформления"/></div>
             </div>
           </div>
@@ -167,12 +174,22 @@
         <section class="lending-block wrapper__lending-block anim-block scroll" data-number="1">
           <div class="lending-block__content">
             <div class="lending-block__info">
-              <ul class="lending-block__tags"> 
-                <li class="lending-block__tag lending-block__tag_color_yellow">Product marketing</li>
-                <li class="lending-block__tag lending-block__tag_color_white">Growth marketing</li>
-                <li class="lending-block__tag lending-block__tag_color_white">Creative</li>
-                <li class="lending-block__tag lending-block__tag_color_gray">Marketing</li>
-                <li class="lending-block__tag lending-block__tag_color_gray">PR</li>
+              <ul class="lending-block__tags">
+                <li class="lending-block__tag">
+                  <input class="lending-block__input" type="radio" name="tag"/><span>Product marketing</span>
+                </li>
+                <li class="lending-block__tag">
+                  <input class="lending-block__input" type="radio" name="tag"/><span>Growth marketing</span>
+                </li>
+                <li class="lending-block__tag">
+                  <input class="lending-block__input" type="radio" name="tag"/><span>Creative</span>
+                </li>
+                <li class="lending-block__tag">
+                  <input class="lending-block__input" type="radio" name="tag"/><span>Marketing</span>
+                </li>
+                <li class="lending-block__tag">
+                  <input class="lending-block__input" type="radio" name="tag"/><span>PR</span>
+                </li>
               </ul>
               <h4 class="lending-block__title">Создание лендинга</h4>
               <p class="lending-block__description">Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям</p>
@@ -181,8 +198,8 @@
               <div class="lending-block__content-screen">
                 <div class="lending-block__img">
                   <picture> 
-                    <source media="(min-width: 768px)" srcset="/img/desktop/Camera.png">
-                    <source media="(min-width: 375px)" srcset="/img/mobile/Camera.png"><img src="/img/desktop/Camera.png" alt="">
+                    <source media="(min-width: 768px)" srcset="/img/desktop/Camera.png"/>
+                    <source media="(min-width: 375px)" srcset="/img/mobile/Camera.png"/><img src="/img/desktop/Camera.png" alt="Элемент оформления"/>
                   </picture>
                 </div>
                 <p class="lending-block__name">скрин системы</p>
@@ -191,21 +208,22 @@
           </div>
         </section>
         <section class="feedback-block wrapper__feedback-block anim-block scroll" data-number="2">
-          <form class="feedback-block__form" action="">
+          <div class="feedback-block__form">
             <h3 class="feedback-block__title">Обратная связь</h3>
-            <input class="feedback-block__input-email" type="text" placeholder="Электронная почта">
-            <input class="feedback-block__input-text" type="text" placeholder="О чем хотите расссказать?">
-            <button class="feedback-block__button">отправить --&gt;</button>
-          </form>
+            <input class="feedback-block__input-email" type="email" placeholder="Электронная почта"/>
+            <textarea class="feedback-block__input-text" name="text" placeholder="О чем хотите расссказать?"></textarea>
+            <button class="feedback-block__button">отправить --&gt</button>
+          </div>
           <div class="feedback-block__img">
             <picture> 
-              <source media="(min-width: 768px)" srcset="/img/desktop/cat.png">
-              <source media="(min-width: 375px)" srcset="/img/mobile/cat.svg"><img src="/img/desktop/cat.png" alt="">
+              <source media="(min-width: 768px)" srcset="/img/desktop/cat.png"/>
+              <source media="(min-width: 375px)" srcset="/img/mobile/cat.svg"/><img src="/img/desktop/cat.png" alt="Элемент оформления"/>
             </picture>
           </div>
         </section>
       </main>
     </div>
-    <script src="./js/header/header.js"> </script>
+    <script src="/js/header/header.js"> </script>
+    <script src="/js/mainBlock/mainBlock.js"> </script>
   </body>
 </html>

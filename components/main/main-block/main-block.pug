@@ -1,0 +1,32 @@
+mixin main(content)
+    section.main-block.wrapper__main
+        .main-block__left
+            .main-block__text
+                h2.main-block__title 
+                    | !{content.mainBlock.title.t}
+                    br 
+                    | !{content.mainBlock.title.c}
+                    br 
+                    | !{content.mainBlock.title.b}
+                p.main-block__subtitle !{content.mainBlock.subtitle}
+            .main-block__bottom-row
+                ul.main-block__tags 
+                    each val in content.mainBlock.tags
+                        li.main-block__tag
+                            input.main-block__input(type="checkbox", name="tag")
+                            span= val
+            .main-block__input-block
+                input.main-block__input-seacrh(placeholder="Электронная почта")
+                button.main-block__button-search !{content.mainBlock.button} 
+        .main-block__right
+            p.main-block__label !{content.mainBlock.label[0]} 
+            .main-block__center-content
+                p.main-block__label !{content.mainBlock.label[1]} 
+                ul.main-block__avatars-row 
+                    each val in content.mainBlock.images.avatars
+                        li.main-block__avatar 
+                            img(src=val, alt="")
+                p.main-block__label !{content.mainBlock.label[2]} 
+            .main-block__bottom-img
+                +picture(content.mainBlock.images.imagePen)
+        .main-block__arrow

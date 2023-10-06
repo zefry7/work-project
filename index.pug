@@ -1,14 +1,22 @@
-include css/header/header.pug
-include css/main/main-block/main-block.pug
-include css/main/name-block/name-block.pug
-include css/main/info-block/info-block.pug
-include css/main/separator-block/separator-block.pug
+include components/header/header.pug
+include components/main/main-block/main-block.pug
+include components/main/name-block/name-block.pug
+include components/main/info-block/info-block.pug
+include components/main/separator-block/separator-block.pug
+include components/main/lending-block/lending-block.pug
+include components/main/feedback-block/feedback-block.pug
+
+mixin picture(images) 
+    picture 
+        each value in images.source 
+            source(media=value.media, srcset=value.srcSet)
+        img(src=images.img.src, alt=images.img.alt)
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="./components/style.css")
         title Mogu  
     body 
         -var lendingTags = ["Product marketing", "Growth marketing", "Creative", "Marketing", "PR"]  
@@ -82,14 +90,16 @@ html(lang="en")
                 },
                 nameBlock: {
                     images: [
-                        {
-                            src: "/img/persona-1.png",
-                            alt: "Часть оформления"
-                        },
-                        {
-                            src: "/img/persona-2.png",
-                            alt: "Часть оформления"
-                        },
+                        [
+                            {
+                                src: "/img/persona-1.png",
+                                alt: "Часть оформления"
+                            },
+                            {
+                                src: "/img/persona-2.png",
+                                alt: "Часть оформления"
+                            }
+                        ],
                         {
                             src: "/img/persona-3.png",
                             alt: "Часть оформления"
@@ -222,7 +232,51 @@ html(lang="en")
                             alt: "Элемент оформления"              
                         }
                     }
-                }     
+                },
+                lendingBlock: {
+                    title: "Создание лендинга",
+                    desc: "Заведите доску, пригласите дизайнера, верстальщика и маркетолога, проведите брейншторм и зафиксируйте все идеи на доске, в колонке «Бэклог», приоритизируйте идеи - с помощью меток или отдельных колонок, наиболее приоритетным - назначьте дедлайны и передайте в работу исполнителям",
+                    name: "скрин системы",
+                    tags: ["Product marketing", "Growth marketing", "Creative", "Marketing", "PR"], 
+                    image: {
+                        source: [
+                            {
+                                srcSet: "/img/desktop/Camera.png",
+                                media: "(min-width: 768px)"
+                            },
+                            {
+                                srcSet: "/img/mobile/Camera.png",
+                                media: "(min-width: 375px)"
+                            }
+                        ],
+                        img: {
+                            src: "/img/desktop/Camera.png",
+                            alt: "Элемент оформления"              
+                        }
+                    }
+                },
+                feedbackBlock: {
+                    title: "Обратная связь",
+                    button: "отправить --&gt",
+                    placeholder: ["Электронная почта", "О чем хотите расссказать?"],
+                    image: {
+                        source: [
+                            {
+                                srcSet: "/img/desktop/cat.png",
+                                media: "(min-width: 768px)"
+                            },
+                            {
+                                srcSet: "/img/mobile/cat.svg",
+                                media: "(min-width: 375px)"
+                            }
+                        ],
+                        img: {
+                            src: "/img/desktop/cat.png",
+                            alt: "Элемент оформления"              
+                        }
+                    }
+                }
+
             }
         .wpapper
             +header(content)
@@ -231,8 +285,9 @@ html(lang="en")
                 +name(content)
                 +info(content)
                 +separator(content) 
-                include css/main/lending-block/lending-block.pug
-                include css/main/feedback-block/feedback-block.pug
-        script(src="./js/header/header.js") 
+                +lending(content)
+                +feedback(content)
+        script(src="/js/header/header.js") 
+        script(src="/js/mainBlock/mainBlock.js") 
 
                     

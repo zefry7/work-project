@@ -1,0 +1,73 @@
+@import url(./null-style.css);
+@import url(./header/header.css);
+@import url(./main/main-block/main-block.css);
+@import url(./main/name-block/name-block.css);
+@import url(./main/info-block/info-block.css);
+@import url(./main/separator-block/separator-block.css);
+@import url(./main/feedback-block/feedback-block.css);
+@import url(./main/lending-block/lending-block.css);
+
+@font-face {
+    font-family: "InterMedium";
+    font-weight: 500;
+    src: url(/fonts/hinted-Inter-Medium.woff) format("woff"),
+        url(/fonts/hinted-Inter-Medium.woff2) format("woff2"),
+        url(/fonts/hinted-Inter-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: "InterRegular";
+    font-weight: 400;
+    src: url(/fonts/hinted-Inter-Regular.ttf) format("woff"),
+        url(/fonts/hinted-Inter-Regular.woff2) format("woff2"),
+        url(/fonts/hinted-Inter-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: "OswaldMedium";
+    font-weight: 500;
+    src: url(/fonts/hinted-Oswald-Medium.woff) format("woff"),
+        url(/fonts/hinted-Oswald-Medium.woff2) format("woff2"),
+        url(/fonts/hinted-Oswald-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: "OswaldRegular";
+    font-weight: 400;
+    src: url(/fonts/hinted-Oswald-Regular.woff) format("woff"),
+        url(/fonts/hinted-Oswald-Regular.woff2) format("woff2"),
+        url(/fonts/hinted-Oswald-Regular.ttf) format("ttf");
+}
+
+.wpapper {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+    cursor: default;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: clamp(375px, 100vw, 1440px);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.body-blocker {
+    overflow: hidden;
+}
+.anim-block {
+    position: relative;
+    top: 100px;
+}
+.anim-block_active {
+    animation: move-up 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes move-up {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 0;
+    }
+}
